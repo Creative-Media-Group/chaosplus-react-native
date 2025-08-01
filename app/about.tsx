@@ -5,7 +5,7 @@ export default function MediaInfoPage() {
     return <SafeAreaView >
         <ScrollView style={style.infopage}>
             <Text style={style.infopagetext}>Repository: </Text>
-            <Link href={"https://google.com"} style={style.link}>Hello</Link>
+            <Link href={"https://github.com/Creative-Media-Group/chaosplus-react-native"} style={style.link}>Hello</Link>
         </ScrollView>
         <Image>
         </Image>
