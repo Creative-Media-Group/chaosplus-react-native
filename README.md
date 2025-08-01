@@ -1,2 +1,2 @@
 # Chaos+
-Just a streaming app for media.ccc.de
+Just a streaming app for https://media.ccc.de
