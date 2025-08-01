@@ -4,7 +4,7 @@ import { Image, SafeAreaView, ScrollView, StyleSheet, Text } from "react-native"
 export default function MediaInfoPage() {
     return <SafeAreaView >
         <ScrollView style={style.infopage}>
-            <Text>Repository: </Text>
+            <Text style={style.infopagetext}>Repository: </Text>
             <Link href={"https://google.com"} style={style.link}>Hello</Link>
         </ScrollView>
         <Image>
@@ -17,5 +17,11 @@ const style = StyleSheet.create({
         alignSelf: "center",
         width: "100%",
         height: "100%",
-    }, link: { color: "blue", fontSize: 20 }
+    },
+    link: {
+        color: "blue",
+        fontSize: 20
+    },
+    infopagetext: {
+    }
 })
