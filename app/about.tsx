@@ -1,5 +1,6 @@
 import { Link } from "expo-router";
-import { Image, SafeAreaView, ScrollView, StyleSheet, Text } from "react-native";
+import { Image, ScrollView, StyleSheet, Text } from "react-native";
+import { SafeAreaView } from "react-native-safe-area-context";
 
 export default function MediaInfoPage() {
     return <SafeAreaView >
