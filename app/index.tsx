@@ -10,7 +10,7 @@ export default function Index() {
         alignItems: "center",
       }}
     >
-      <ScrollView id="scrollEvents" style={{ width: "100%" }} >
+      <ScrollView id="scrollEvents" style={{ width: "100%" }}>
         <Text>Edit app/index.tsx to edit this screen.</Text>
         <Text>Edit app/index.tsx to edit this screen.</Text>
         <Text>Edit app/index.tsx to edit this screen.</Text>
@@ -79,4 +79,4 @@ export default function Index() {
     </SafeAreaView>
   );
 }
-const style = StyleSheet.create({})
+const style = StyleSheet.create({});

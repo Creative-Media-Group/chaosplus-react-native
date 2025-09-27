@@ -3,26 +3,33 @@ import { Image, ScrollView, StyleSheet, Text } from "react-native";
 import { SafeAreaView } from "react-native-safe-area-context";
 
 export default function MediaInfoPage() {
-    return <SafeAreaView >
-        <ScrollView style={style.infopage}>
-            <Text style={style.infopagetext}>Repository: </Text>
-            <Link href={"https://github.com/Creative-Media-Group/chaosplus-react-native"} style={style.link}>Hello</Link>
-        </ScrollView>
-        <Image>
-        </Image>
+  return (
+    <SafeAreaView>
+      <ScrollView style={style.infopage}>
+        <Text style={style.infopagetext}>Repository: </Text>
+        <Link
+          href={
+            "https://github.com/Creative-Media-Group/chaosplus-react-native"
+          }
+          style={style.link}
+        >
+          Hello
+        </Link>
+      </ScrollView>
+      <Image></Image>
     </SafeAreaView>
+  );
 }
 const style = StyleSheet.create({
-    infopage: {
-        alignContent: "center", // alignItems: "center",
-        alignSelf: "center",
-        width: "100%",
-        height: "100%",
-    },
-    link: {
-        color: "blue",
-        fontSize: 20
-    },
-    infopagetext: {
-    }
-})
+  infopage: {
+    alignContent: "center", // alignItems: "center",
+    alignSelf: "center",
+    width: "100%",
+    height: "100%",
+  },
+  link: {
+    color: "blue",
+    fontSize: 20,
+  },
+  infopagetext: {},
+});
