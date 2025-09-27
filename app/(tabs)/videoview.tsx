@@ -11,7 +11,7 @@ export default function MyVideoView() {
   const { isPlaying } = useEvent(player, "playingChange", {
     isPlaying: player.playing,
   });
-
+  console.log(isPlaying);
   return (
     <VideoView
       style={styles.video}
