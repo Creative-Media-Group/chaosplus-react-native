@@ -4,7 +4,7 @@ export default function Card(img_src: ImageSourcePropType, text: string) {
     return (
         <TouchableOpacity>
             <Image source={img_src} />
-            <Text >${text}</Text>
+            <Text>${text}</Text>
         </TouchableOpacity>
     )
 }
