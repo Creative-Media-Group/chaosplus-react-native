@@ -25,6 +25,15 @@ export default function RootLayout() {
           ),
         }}
       />
+      <Tabs.Screen
+        name="(tabs)"
+        options={{
+          title: abouttitle,
+          tabBarIcon: ({ color, size }) => (
+            <Ionicons name="information" color={color} size={size} />
+          ),
+        }}
+      />
     </Tabs>
   );
 }
