@@ -13,7 +13,7 @@ export default function MediaInfoPage() {
           }
           style={style.link}
         >
-          Hello
+          Chaos+
         </Link>
       </ScrollView>
       <Image></Image>

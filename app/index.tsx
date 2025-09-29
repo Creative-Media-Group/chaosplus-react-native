@@ -11,72 +11,72 @@ export default function Index() {
       }}
     >
       <ScrollView id="scrollEvents" style={{ width: "100%" }}>
-        <Text>Edit app/index.tsx to edit this screen.</Text>
-        <Text>Edit app/index.tsx to edit this screen.</Text>
-        <Text>Edit app/index.tsx to edit this screen.</Text>
-        <Text>Edit app/index.tsx to edit this screen.</Text>
-        <Text>Edit app/index.tsx to edit this screen.</Text>
-        <Text>Edit app/index.tsx to edit this screen.</Text>
-        <Text>Edit app/index.tsx to edit this screen.</Text>
-        <Text>Edit app/index.tsx to edit this screen.</Text>
-        <Text>Edit app/index.tsx to edit this screen.</Text>
-        <Text>Edit app/index.tsx to edit this screen.</Text>
-        <Text>Edit app/index.tsx to edit this screen.</Text>
-        <Text>Edit app/index.tsx to edit this screen.</Text>
-        <Text>Edit app/index.tsx to edit this screen.</Text>
-        <Text>Edit app/index.tsx to edit this screen.</Text>
-        <Text>Edit app/index.tsx to edit this screen.</Text>
-        <Text>Edit app/index.tsx to edit this screen.</Text>
-        <Text>Edit app/index.tsx to edit this screen.</Text>
-        <Text>Edit app/index.tsx to edit this screen.</Text>
-        <Text>Edit app/index.tsx to edit this screen.</Text>
-        <Text>Edit app/index.tsx to edit this screen.</Text>
-        <Text>Edit app/index.tsx to edit this screen.</Text>
-        <Text>Edit app/index.tsx to edit this screen.</Text>
-        <Text>Edit app/index.tsx to edit this screen.</Text>
-        <Text>Edit app/index.tsx to edit this screen.</Text>
-        <Text>Edit app/index.tsx to edit this screen.</Text>
-        <Text>Edit app/index.tsx to edit this screen.</Text>
-        <Text>Edit app/index.tsx to edit this screen.</Text>
-        <Text>Edit app/index.tsx to edit this screen.</Text>
-        <Text>Edit app/index.tsx to edit this screen.</Text>
-        <Text>Edit app/index.tsx to edit this screen.</Text>
-        <Text>Edit app/index.tsx to edit this screen.</Text>
-        <Text>Edit app/index.tsx to edit this screen.</Text>
-        <Text>Edit app/index.tsx to edit this screen.</Text>
-        <Text>Edit app/index.tsx to edit this screen.</Text>
-        <Text>Edit app/index.tsx to edit this screen.</Text>
-        <Text>Edit app/index.tsx to edit this screen.</Text>
-        <Text>Edit app/index.tsx to edit this screen.</Text>
-        <Text>Edit app/index.tsx to edit this screen.</Text>
-        <Text>Edit app/index.tsx to edit this screen.</Text>
-        <Text>Edit app/index.tsx to edit this screen.</Text>
-        <Text>Edit app/index.tsx to edit this screen.</Text>
-        <Text>Edit app/index.tsx to edit this screen.</Text>
-        <Text>Edit app/index.tsx to edit this screen.</Text>
-        <Text>Edit app/index.tsx to edit this screen.</Text>
-        <Text>Edit app/index.tsx to edit this screen.</Text>
-        <Text>Edit app/index.tsx to edit this screen.</Text>
-        <Text>Edit app/index.tsx to edit this screen.</Text>
-        <Text>Edit app/index.tsx to edit this screen.</Text>
-        <Text>Edit app/index.tsx to edit this screen.</Text>
-        <Text>Edit app/index.tsx to edit this screen.</Text>
-        <Text>Edit app/index.tsx to edit this screen.</Text>
-        <Text>Edit app/index.tsx to edit this screen.</Text>
-        <Text>Edit app/index.tsx to edit this screen.</Text>
-        <Text>Edit app/index.tsx to edit this screen.</Text>
-        <Text>Edit app/index.tsx to edit this screen.</Text>
-        <Text>Edit app/index.tsx to edit this screen.</Text>
-        <Text>Edit app/index.tsx to edit this screen.</Text>
-        <Text>Edit app/index.tsx to edit this screen.</Text>
-        <Text>Edit app/index.tsx to edit this screen.</Text>
-        <Text>Edit app/index.tsx to edit this screen.</Text>
-        <Text>Edit app/index.tsx to edit this screen.</Text>
-        <Text>Edit app/index.tsx to edit this screen.</Text>
-        <Text>Edit app/index.tsx to edit this screen.</Text>
-        <Text>Edit app/index.tsx to edit this screen.</Text>
+        <Text style={style.heading}>Edit app/index.tsx to edit this screen.</Text>
+        <Text style={style.heading}>Edit app/index.tsx to edit this screen.</Text>
+        <Text style={style.heading}>Edit app/index.tsx to edit this screen.</Text>
+        <Text style={style.heading}>Edit app/index.tsx to edit this screen.</Text>
+        <Text style={style.heading}>Edit app/index.tsx to edit this screen.</Text>
+        <Text style={style.heading}>Edit app/index.tsx to edit this screen.</Text>
+        <Text style={style.heading}>Edit app/index.tsx to edit this screen.</Text>
+        <Text style={style.heading}>Edit app/index.tsx to edit this screen.</Text>
+        <Text style={style.heading}>Edit app/index.tsx to edit this screen.</Text>
+        <Text style={style.heading}>Edit app/index.tsx to edit this screen.</Text>
+        <Text style={style.heading}>Edit app/index.tsx to edit this screen.</Text>
+        <Text style={style.heading}>Edit app/index.tsx to edit this screen.</Text>
+        <Text style={style.heading}>Edit app/index.tsx to edit this screen.</Text>
+        <Text style={style.heading}>Edit app/index.tsx to edit this screen.</Text>
+        <Text style={style.heading}>Edit app/index.tsx to edit this screen.</Text>
+        <Text style={style.heading}>Edit app/index.tsx to edit this screen.</Text>
+        <Text style={style.heading}>Edit app/index.tsx to edit this screen.</Text>
+        <Text style={style.heading}>Edit app/index.tsx to edit this screen.</Text>
+        <Text style={style.heading}>Edit app/index.tsx to edit this screen.</Text>
+        <Text style={style.heading}>Edit app/index.tsx to edit this screen.</Text>
+        <Text style={style.heading}>Edit app/index.tsx to edit this screen.</Text>
+        <Text style={style.heading}>Edit app/index.tsx to edit this screen.</Text>
+        <Text style={style.heading}>Edit app/index.tsx to edit this screen.</Text>
+        <Text style={style.heading}>Edit app/index.tsx to edit this screen.</Text>
+        <Text style={style.heading}>Edit app/index.tsx to edit this screen.</Text>
+        <Text style={style.heading}>Edit app/index.tsx to edit this screen.</Text>
+        <Text style={style.heading}>Edit app/index.tsx to edit this screen.</Text>
+        <Text style={style.heading}>Edit app/index.tsx to edit this screen.</Text>
+        <Text style={style.heading}>Edit app/index.tsx to edit this screen.</Text>
+        <Text style={style.heading}>Edit app/index.tsx to edit this screen.</Text>
+        <Text style={style.heading}>Edit app/index.tsx to edit this screen.</Text>
+        <Text style={style.heading}>Edit app/index.tsx to edit this screen.</Text>
+        <Text style={style.heading}>Edit app/index.tsx to edit this screen.</Text>
+        <Text style={style.heading}>Edit app/index.tsx to edit this screen.</Text>
+        <Text style={style.heading}>Edit app/index.tsx to edit this screen.</Text>
+        <Text style={style.heading}>Edit app/index.tsx to edit this screen.</Text>
+        <Text style={style.heading}>Edit app/index.tsx to edit this screen.</Text>
+        <Text style={style.heading}>Edit app/index.tsx to edit this screen.</Text>
+        <Text style={style.heading}>Edit app/index.tsx to edit this screen.</Text>
+        <Text style={style.heading}>Edit app/index.tsx to edit this screen.</Text>
+        <Text style={style.heading}>Edit app/index.tsx to edit this screen.</Text>
+        <Text style={style.heading}>Edit app/index.tsx to edit this screen.</Text>
+        <Text style={style.heading}>Edit app/index.tsx to edit this screen.</Text>
+        <Text style={style.heading}>Edit app/index.tsx to edit this screen.</Text>
+        <Text style={style.heading}>Edit app/index.tsx to edit this screen.</Text>
+        <Text style={style.heading}>Edit app/index.tsx to edit this screen.</Text>
+        <Text style={style.heading}>Edit app/index.tsx to edit this screen.</Text>
+        <Text style={style.heading}>Edit app/index.tsx to edit this screen.</Text>
+        <Text style={style.heading}>Edit app/index.tsx to edit this screen.</Text>
+        <Text style={style.heading}>Edit app/index.tsx to edit this screen.</Text>
+        <Text style={style.heading}>Edit app/index.tsx to edit this screen.</Text>
+        <Text style={style.heading}>Edit app/index.tsx to edit this screen.</Text>
+        <Text style={style.heading}>Edit app/index.tsx to edit this screen.</Text>
+        <Text style={style.heading}>Edit app/index.tsx to edit this screen.</Text>
+        <Text style={style.heading}>Edit app/index.tsx to edit this screen.</Text>
+        <Text style={style.heading}>Edit app/index.tsx to edit this screen.</Text>
+        <Text style={style.heading}>Edit app/index.tsx to edit this screen.</Text>
+        <Text style={style.heading}>Edit app/index.tsx to edit this screen.</Text>
+        <Text style={style.heading}>Edit app/index.tsx to edit this screen.</Text>
+        <Text style={style.heading}>Edit app/index.tsx to edit this screen.</Text>
+        <Text style={style.heading}>Edit app/index.tsx to edit this screen.</Text>
+        <Text style={style.heading}>Edit app/index.tsx to edit this screen.</Text>
+        <Text style={style.heading}>Edit app/index.tsx to edit this screen.</Text>
+        <Text style={style.heading}>Edit app/index.tsx to edit this screen.</Text>
       </ScrollView>
     </SafeAreaView>
   );
 }
-const style = StyleSheet.create({});
+const style = StyleSheet.create({ heading: { fontSize: 50 } });
