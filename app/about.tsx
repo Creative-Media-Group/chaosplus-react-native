@@ -1,5 +1,6 @@
+import { mystyles } from "@/styles/styles";
 import { Link } from "expo-router";
-import { Image, ScrollView, StyleSheet, Text } from "react-native";
+import { Image, ScrollView, Text } from "react-native";
 import { SafeAreaView } from "react-native-safe-area-context";
 
 export default function MediaInfoPage() {
@@ -20,16 +21,4 @@ export default function MediaInfoPage() {
     </SafeAreaView>
   );
 }
-const style = StyleSheet.create({
-  infopage: {
-    alignContent: "center", // alignItems: "center",
-    alignSelf: "center",
-    width: "100%",
-    height: "100%",
-  },
-  link: {
-    color: "blue",
-    fontSize: 20,
-  },
-  infopagetext: {},
-});
+const style = mystyles();
