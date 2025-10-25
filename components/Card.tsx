@@ -4,7 +4,6 @@ interface CardProbs {
     onPress: () => void;
     img_src: ImageSourcePropType,
     text: string
-
 }
 export default function Card({ img_src, text }: CardProbs) {
     return (
