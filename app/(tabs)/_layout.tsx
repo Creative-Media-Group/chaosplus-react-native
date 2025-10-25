@@ -5,15 +5,16 @@ import { Tabs } from "expo-router";
 export default function RootLayout() {
   let hometitle = i18n.t("home");
   let abouttitle = i18n.t("about");
-  return <Tabs><Tabs.Screen
-    name="index"
-    options={{
-      title: hometitle,
-      tabBarIcon: ({ color, size }) => (
-        <Ionicons name="home" color={color} size={size} />
-      ),
-    }}
-  />
+  return <Tabs>
+    <Tabs.Screen
+      name="index"
+      options={{
+        title: hometitle,
+        tabBarIcon: ({ color, size }) => (
+          <Ionicons name="home" color={color} size={size} />
+        ),
+      }}
+    />
     <Tabs.Screen
       name="about"
       options={{
@@ -31,5 +32,6 @@ export default function RootLayout() {
           <Ionicons name="information" color={color} size={size} />
         ),
       }}
-    /></Tabs>;
+    />
+  </Tabs>;
 }

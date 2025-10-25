@@ -36,6 +36,12 @@
     "plugins": [
       "expo-router",
       [
+        "expo-screen-orientation",
+        {
+          "initialOrientation": "ALL"
+        }
+      ],
+      [
         "expo-splash-screen",
         {
           "image": "./assets/images/splash-icon.png",
@@ -44,7 +50,12 @@
           "backgroundColor": "#ffffff"
         }
       ],
-      "expo-video",
+      [
+        "expo-video",
+        {
+          "supportsPictureInPicture": true
+        }
+      ],
       "expo-web-browser",
       "expo-localization"
     ],

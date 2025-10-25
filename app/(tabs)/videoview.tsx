@@ -9,14 +9,14 @@ export default function MyVideoView() {
     player.play();
   });
   const { isPlaying } = useEvent(player, "playingChange", {
-    isPlaying: player.playing,
+    isPlaying: player.playing
   });
   console.log(isPlaying);
   return (
     <VideoView
       style={styles.video}
       player={player}
-      allowsFullscreen
+      fullscreenOptions={ },
       allowsPictureInPicture
     />
   );
