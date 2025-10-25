@@ -16,7 +16,7 @@ export default function MyVideoView() {
     <VideoView
       style={styles.video}
       player={player}
-      fullscreenOptions={ },
+      fullscreenOptions={{ enable: true }}
       allowsPictureInPicture
     />
   );
