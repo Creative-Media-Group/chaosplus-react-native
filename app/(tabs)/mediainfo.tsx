@@ -15,7 +15,7 @@ function MediaInfoContent({ img_src, text }: MediaInfoContentProbs) {
 export default function MediaInfoPage() {
   return (
     <SafeAreaView>
-      <MediaInfoContent img_src={{ uri: "asset:assets/I" }} text="hello" />
+      <MediaInfoContent img_src={{ uri: "asset:assets/Images/Icon" }} text="hello" />
     </SafeAreaView>
   );
 }
