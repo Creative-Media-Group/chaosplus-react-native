@@ -2,7 +2,7 @@ import { useEvent } from "expo";
 import { VideoView, useVideoPlayer } from "expo-video";
 import { StyleSheet } from "react-native";
 const videoSource =
-  "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4";
+  "https://download.blender.org/demo/movies/ToS/tearsofsteel_4k.mov";
 
 export default function MyVideoView() {
   const player = useVideoPlayer(videoSource, (player) => {

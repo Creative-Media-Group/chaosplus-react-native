@@ -9,64 +9,64 @@ export default function Index() {
             title: "Test"
         },
         {
-            id: '1',
+            id: '2',
             title: "Test"
         }, {
-            id: '1',
+            id: '3',
             title: "Test"
         }, {
-            id: '1',
+            id: '4',
             title: "Test"
         }, {
-            id: '1',
+            id: '5',
             title: "Test"
         }, {
-            id: '1',
+            id: '6',
             title: "Test"
         }, {
-            id: '1',
+            id: '7',
             title: "Test"
         }, {
-            id: '1',
+            id: '8',
             title: "Test"
         }, {
-            id: '1',
+            id: '9',
             title: "Test"
         }, {
-            id: '1',
+            id: '10',
             title: "Test"
         }, {
-            id: '1',
+            id: '11',
             title: "Test"
         }, {
-            id: '1',
+            id: '12',
             title: "Test"
         }, {
-            id: '1',
+            id: '13',
             title: "Test"
         }, {
-            id: '1',
+            id: '14',
             title: "Test"
         }, {
-            id: '1',
+            id: '15',
             title: "Test"
         }, {
-            id: '1',
+            id: '16',
             title: "Test"
         }, {
-            id: '1',
+            id: '17',
             title: "Test"
         }, {
-            id: '1',
+            id: '18',
             title: "Test"
         }, {
-            id: '1',
+            id: '19',
             title: "Test"
         }, {
-            id: '1',
+            id: '20',
             title: "Test"
         }, {
-            id: '1',
+            id: '21',
             title: "Test"
         },
     ];
@@ -78,7 +78,7 @@ export default function Index() {
             <FlatList
                 data={data}
                 renderItem={({ item }) => <Text
-                    style={style.heading}>{item.title}
+                    style={style.heading, { fontFamily: "VCROCDFaux" }}>{item.title}
                 </Text>}
                 keyExtractor={item => item.id} />
         </SafeAreaView>
