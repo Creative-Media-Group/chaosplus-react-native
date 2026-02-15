@@ -1,16 +1,37 @@
 import { mystyles } from "@/styles/styles";
-import { Text } from "react-native";
+import { useEffect, useState } from "react";
+import { ScrollView, Text } from "react-native";
 import { SafeAreaView } from "react-native-safe-area-context";
 
-export default function Index() {
+interface ConferenceList {
+    title: string
 
-    // const testcard = <Card img_src={"https://upload.wikimedia.org/wikipedia/commons/thumb/d/d1/Logo_CCC.svg/640px-Logo_CCC.svg.png"} text="hello" />
+
+}
+export default function Index() {
+    const [conferences, setConferences] = useState<ConferenceList[]>([]);
+    useEffect(() => { getConferences() }, []);
+    async function getConferences() {
+        try {
+            const url = "https://api.media.ccc.de/public/conferences";
+            const response = await fetch(url);
+            const data = await response.json()
+            setConferences(data.results["conferences"])
+        }
+        catch (e) {
+            console.log(e)
+        }
+    }
     return (
         <SafeAreaView
             style={style.homeview}
         >
-            <Text style={style.heading}>Hello</Text>
-        </SafeAreaView>
+            <ScrollView>
+                {conferences.map((connference) => (
+                    <Text key={connference.title}>{connference.title}</Text>
+                ))}
+            </ScrollView>
+        </SafeAreaView> //<Text style={style.heading}>Hello</Text>
     );
 }
 const style = mystyles();
