@@ -1,6 +1,6 @@
+import { mystyles } from "@/styles/styles";
 import { useEvent } from "expo";
 import { VideoView, useVideoPlayer } from "expo-video";
-import { StyleSheet } from "react-native";
 const videoSource =
   "https://download.blender.org/demo/movies/ToS/tearsofsteel_4k.mov";
 
@@ -22,19 +22,4 @@ export default function MyVideoView() {
   );
 }
 
-const styles = StyleSheet.create({
-  contentContainer: {
-    flex: 1,
-    padding: 10,
-    alignItems: "center",
-    justifyContent: "center",
-    paddingHorizontal: 50,
-  },
-  video: {
-    width: "100%",
-    height: "50%",
-  },
-  controlsContainer: {
-    padding: 10,
-  },
-});
+const styles = mystyles()
