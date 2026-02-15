@@ -24,8 +24,8 @@ export default function Index() {
     return (
         <SafeAreaView style={style.homeview}>
             <ScrollView >
-                {conferences.map((connference) => (
-                    <Text style={style.heading} key={connference.title}>{connference.title}</Text>
+                {conferences.map((conference) => (
+                    <Text style={style.heading} key={conference.title}>{conference.title}</Text>
                 ))}
             </ScrollView>
         </SafeAreaView>
