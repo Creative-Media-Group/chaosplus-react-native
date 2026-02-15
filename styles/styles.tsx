@@ -1,7 +1,7 @@
 import { StyleSheet } from "react-native";
 export function mystyles() {
     return StyleSheet.create({
-        heading: { fontSize: 50, margin: 5 },
+        heading: { fontSize: 20, margin: 5 },
         infopage: {
             alignContent: "center", // alignItems: "center",
             alignSelf: "center",
@@ -17,7 +17,8 @@ export function mystyles() {
             flex: 1,
             // justifyContent: "center",
             // alignItems: "center",
-            width: "100%"
+            //width: "100%"
+            backgroundColor: "red",
         },
         contentContainer: {
             flex: 1,

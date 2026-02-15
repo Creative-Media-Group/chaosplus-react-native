@@ -4,9 +4,8 @@ import { ScrollView, Text } from "react-native";
 import { SafeAreaView } from "react-native-safe-area-context";
 
 interface ConferenceList {
+    acronym: string
     title: string
-
-
 }
 export default function Index() {
     const [conferences, setConferences] = useState<ConferenceList[]>([]);
@@ -16,22 +15,20 @@ export default function Index() {
             const url = "https://api.media.ccc.de/public/conferences";
             const response = await fetch(url);
             const data = await response.json()
-            setConferences(data.results["conferences"])
+            setConferences(data.conferences)
         }
         catch (e) {
             console.log(e)
         }
     }
     return (
-        <SafeAreaView
-            style={style.homeview}
-        >
-            <ScrollView>
+        <SafeAreaView style={style.homeview}>
+            <ScrollView >
                 {conferences.map((connference) => (
-                    <Text key={connference.title}>{connference.title}</Text>
+                    <Text style={style.heading} key={connference.title}>{connference.title}</Text>
                 ))}
             </ScrollView>
-        </SafeAreaView> //<Text style={style.heading}>Hello</Text>
+        </SafeAreaView>
     );
 }
 const style = mystyles();
