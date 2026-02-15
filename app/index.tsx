@@ -78,7 +78,7 @@ export default function Index() {
             <FlatList
                 data={data}
                 renderItem={({ item }) => <Text
-                    style={style.heading, { fontFamily: "VCROCDFaux" }}>{item.title}
+                    style={style.heading}>{item.title}
                 </Text>}
                 keyExtractor={item => item.id} />
         </SafeAreaView>

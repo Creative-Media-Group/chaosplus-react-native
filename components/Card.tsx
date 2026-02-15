@@ -1,4 +1,5 @@
-import { Image, ImageSourcePropType, Text, TouchableOpacity } from "react-native";
+import { Image } from "expo-image";
+import { ImageSourcePropType, Text, TouchableOpacity } from "react-native";
 
 interface CardProbs {
     onPress: () => void;
