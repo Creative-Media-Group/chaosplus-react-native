@@ -18,7 +18,6 @@ export function mystyles() {
             // justifyContent: "center",
             // alignItems: "center",
             //width: "100%"
-            backgroundColor: "red",
         },
         contentContainer: {
             flex: 1,
@@ -30,6 +29,7 @@ export function mystyles() {
         video: {
             width: "100%",
             height: "50%",
+            backgroundColor: "black"
         },
         controlsContainer: {
             padding: 10,

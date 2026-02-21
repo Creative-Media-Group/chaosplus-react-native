@@ -26,9 +26,14 @@ export default function Index() {
             <ScrollView >
                 {conferences.map((conference) => (
                     <Text style={style.heading} key={conference.title}>{conference.title}</Text>
+                    //<Link href={"/videoview"} key={conference.acronym}>Hello</Link>
                 ))}
             </ScrollView>
         </SafeAreaView>
     );
 }
 const style = mystyles();
+//    <Link href={"/videoview"} key={conference.acronym}>
+//        Hello
+//    </Link>
+//<FlatList key={conference.title} data={[conference.title]} />

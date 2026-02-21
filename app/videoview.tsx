@@ -1,8 +1,9 @@
 import { mystyles } from "@/styles/styles";
 import { useEvent } from "expo";
 import { VideoView, useVideoPlayer } from "expo-video";
-const videoSource =
-  "https://download.blender.org/demo/movies/ToS/tearsofsteel_4k.mov";
+import { Text } from "react-native";
+
+const videoSource = "https://download.blender.org/demo/movies/ToS/tearsofsteel_4k.mov";
 
 export default function MyVideoView() {
   const player = useVideoPlayer(videoSource, (player) => {
@@ -17,8 +18,8 @@ export default function MyVideoView() {
       style={styles.video}
       player={player}
       fullscreenOptions={{ enable: true }}
-      allowsPictureInPicture
-    />
+      allowsPictureInPicture={true}
+    ><Text>Hello</Text></VideoView>
   );
 }
 
