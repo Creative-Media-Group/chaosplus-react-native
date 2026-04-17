@@ -1,7 +1,7 @@
-import { mystyles } from "@/styles/styles";
 import { Link } from "expo-router";
 import { Image, ScrollView, Text } from "react-native";
 import { SafeAreaView } from "react-native-safe-area-context";
+import { mystyles } from "../styles/styles";
 
 export default function MediaInfoPage() {
   return (

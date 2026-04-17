@@ -1,7 +1,7 @@
-import { mystyles } from "@/styles/styles";
 import { useEffect, useState } from "react";
 import { ScrollView, Text } from "react-native";
 import { SafeAreaView } from "react-native-safe-area-context";
+import { mystyles } from "../styles/styles";
 
 interface ConferenceList {
     acronym: string

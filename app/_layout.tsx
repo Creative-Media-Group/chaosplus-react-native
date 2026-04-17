@@ -1,5 +1,5 @@
-import { i18n } from "@/utils/mylocalisation";
 import { Stack } from "expo-router";
+import { i18n } from "../utils/mylocalisation";
 
 export default function RootLayout() {
   let hometitle = i18n.t("home");

@@ -1,7 +1,7 @@
-import { mystyles } from "@/styles/styles";
 import { useEvent } from "expo";
 import { VideoView, useVideoPlayer } from "expo-video";
 import { Text } from "react-native";
+import { mystyles } from "../styles/styles";
 
 const videoSource = "https://download.blender.org/demo/movies/ToS/tearsofsteel_4k.mov";
 
