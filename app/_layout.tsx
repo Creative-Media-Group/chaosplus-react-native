@@ -9,6 +9,7 @@ export default function RootLayout() {
       name="index"
       options={{
         title: hometitle,
+        headerShown: false
       }}
     />
     <Stack.Screen
