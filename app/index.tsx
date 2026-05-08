@@ -1,3 +1,4 @@
+import { StatusBar } from 'expo-status-bar';
 import { useEffect, useState } from "react";
 import { ScrollView, Text } from "react-native";
 import { SafeAreaView } from "react-native-safe-area-context";
@@ -29,6 +30,7 @@ export default function Index() {
                     //<Link href={"/videoview"} key={conference.acronym}>Hello</Link>
                 ))}
             </ScrollView>
+            <StatusBar style='light' />
         </SafeAreaView>
     );
 }
