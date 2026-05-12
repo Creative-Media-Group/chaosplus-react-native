@@ -1,7 +1,6 @@
 import { StatusBar } from 'expo-status-bar';
 import { useEffect, useState } from "react";
-import { ScrollView, Text } from "react-native";
-import { SafeAreaView } from "react-native-safe-area-context";
+import { ScrollView, Text, View } from "react-native";
 import { mystyles } from "../styles/styles";
 
 interface ConferenceList {
@@ -23,7 +22,7 @@ export default function Index() {
         }
     }
     return (
-        <SafeAreaView style={style.homeview}>
+        <View style={style.homeview}>
             <ScrollView >
                 {conferences.map((conference) => (
                     <Text style={style.heading} key={conference.title}>{conference.title}</Text>
@@ -31,7 +30,7 @@ export default function Index() {
                 ))}
             </ScrollView>
             <StatusBar style='light' />
-        </SafeAreaView>
+        </View>
     );
 }
 const style = mystyles();
