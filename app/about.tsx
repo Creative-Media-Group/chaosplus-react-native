@@ -1,9 +1,11 @@
 import { Link } from "expo-router";
-import { Image, ScrollView, Text } from "react-native";
+import { Image, ScrollView, Text, useColorScheme } from "react-native";
 import { SafeAreaView } from "react-native-safe-area-context";
 import { mystyles } from "../styles/styles";
 
 export default function MediaInfoPage() {
+  const colorSheme = useColorScheme();
+  const style = mystyles(colorSheme);
   return (
     <SafeAreaView>
       <ScrollView style={style.infopage}>
@@ -21,4 +23,3 @@ export default function MediaInfoPage() {
     </SafeAreaView>
   );
 }
-const style = mystyles();

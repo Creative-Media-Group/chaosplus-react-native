@@ -1,7 +1,9 @@
 import { StyleSheet } from "react-native";
-export function mystyles() {
+
+export function mystyles(colorSheme: string | undefined) {
+    console.log(colorSheme)
     return StyleSheet.create({
-        heading: { fontSize: 20, margin: 5 },
+        heading: { fontSize: 20, margin: 5, color: colorSheme ? "black" : "white" },
         infopage: {
             alignContent: "center", // alignItems: "center",
             alignSelf: "center",

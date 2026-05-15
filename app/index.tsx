@@ -1,13 +1,15 @@
 import { StatusBar } from 'expo-status-bar';
 import { useEffect, useState } from "react";
-import { ScrollView, Text, View } from "react-native";
-import { mystyles } from "../styles/styles";
+import { ScrollView, Text, useColorScheme, View } from "react-native";
+import { mystyles } from '../styles/styles';
 
 interface ConferenceList {
     acronym: string
     title: string
 }
 export default function Index() {
+    const colorSheme = useColorScheme()
+    const style = mystyles(colorSheme);
     const [conferences, setConferences] = useState<ConferenceList[]>([]);
     useEffect(() => { getConferences() }, []);
     async function getConferences() {
@@ -29,12 +31,7 @@ export default function Index() {
                     //<Link href={"/videoview"} key={conference.acronym}>Hello</Link>
                 ))}
             </ScrollView>
-            <StatusBar style='light' />
+            <StatusBar style='auto' />
         </View>
     );
 }
-const style = mystyles();
-//    <Link href={"/videoview"} key={conference.acronym}>
-//        Hello
-//    </Link>
-//<FlatList key={conference.title} data={[conference.title]} />

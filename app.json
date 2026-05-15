@@ -8,23 +8,15 @@
     "scheme": "chaosplus",
     "userInterfaceStyle": "automatic",
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "de.cmg.chaosplus"
     },
     "android": {
-      "intentFilters": [
-        {
-          "action": "VIEW",
-          "data": [
-            {
-              "scheme": "https"
-            }
-          ]
-        }
-      ],
       "adaptiveIcon": {
         "foregroundImage": "./assets/images/adaptive-icon.png",
         "backgroundColor": "#ffffff"
-      }
+      },
+      "package": "de.cmg.chaosplus"
     },
     "web": {
       "bundler": "metro",
