@@ -1,17 +1,14 @@
-import { StatusBar } from 'expo-status-bar';
 import { useEffect, useState } from "react";
-import { ScrollView, Text, useColorScheme, View } from "react-native";
-import { mystyles } from '../styles/styles';
+import { ScrollView, Text } from "react-native";
+import { useStyles } from '../styles/styles';
 
 interface ConferenceList {
     acronym: string
     title: string
 }
 export default function Index() {
-    const colorSheme = useColorScheme()
-    const style = mystyles(colorSheme);
+    const style = useStyles();
     const [conferences, setConferences] = useState<ConferenceList[]>([]);
-    useEffect(() => { getConferences() }, []);
     async function getConferences() {
         try {
             const url = "https://api.media.ccc.de/public/conferences";
@@ -23,15 +20,14 @@ export default function Index() {
             console.log(e)
         }
     }
+    useEffect(() => { getConferences() }, []);
+
     return (
-        <View style={style.homeview}>
-            <ScrollView >
-                {conferences.map((conference) => (
-                    <Text style={style.heading} key={conference.title}>{conference.title}</Text>
-                    //<Link href={"/videoview"} key={conference.acronym}>Hello</Link>
-                ))}
-            </ScrollView>
-            <StatusBar style='auto' />
-        </View>
+        <ScrollView style={style.infopage} contentContainerStyle={{ alignItems: "center" }}>
+            {conferences.map((conference) => (
+                <Text style={style.heading} key={conference.title}>{conference.title}</Text>
+                //<Link href={"/videoview"} key={conference.acronym}>Hello</Link>
+            ))}
+        </ScrollView>
     );
 }

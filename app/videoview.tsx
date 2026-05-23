@@ -1,13 +1,13 @@
 import { useEvent } from "expo";
 import { VideoView, useVideoPlayer } from "expo-video";
-import { Text, useColorScheme } from "react-native";
-import { mystyles } from "../styles/styles";
+import { Text } from "react-native";
+import { SafeAreaView } from "react-native-safe-area-context";
+import { useStyles } from "../styles/styles";
 
 const videoSource = "https://download.blender.org/demo/movies/ToS/tearsofsteel_4k.mov";
 
 export default function MyVideoView() {
-  const colorSheme = useColorScheme();
-  const style = mystyles(colorSheme);
+  const styles = useStyles();
   const player = useVideoPlayer(videoSource, (player) => {
     player.play();
   });
@@ -16,11 +16,15 @@ export default function MyVideoView() {
   });
   console.log("Status: " + isPlaying);
   return (
-    <VideoView
-      style={style.video}
-      player={player}
-      fullscreenOptions={{ enable: true }}
-      allowsPictureInPicture={true}
-    ><Text>Hello</Text></VideoView>
+    <SafeAreaView style={{ flex: 1 }}>
+      <VideoView
+        style={styles.video}
+        player={player}
+        fullscreenOptions={{ enable: true, keepFullscreenOnPiPStop: "always" }}
+
+        allowsPictureInPicture={true}
+      />
+      <Text style={styles.heading}>Hello</Text>
+    </SafeAreaView>
   );
 }

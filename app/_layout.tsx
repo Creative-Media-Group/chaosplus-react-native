@@ -1,5 +1,4 @@
-import { DarkTheme, DefaultTheme, ThemeProvider, useTheme } from "@react-navigation/native";
-import { Icon, Label } from "expo-router";
+import { DarkTheme, DefaultTheme, ThemeProvider, useTheme } from "expo-router/react-navigation";
 import { NativeTabs } from "expo-router/unstable-native-tabs";
 import { useColorScheme } from "react-native";
 import { i18n } from "../utils/mylocalisation";
@@ -15,15 +14,21 @@ export default function RootLayout() {
         tintColor={theme.colors.primary}
         backgroundColor={theme.colors.background} >
         <NativeTabs.Trigger name="index">
-          <Label>{hometitle}
-          </Label>
-          <Icon sf={"house"} md="home" />
+          <NativeTabs.Trigger.Label>{hometitle}
+          </NativeTabs.Trigger.Label>
+          <NativeTabs.Trigger.Icon sf={"house"} md="home" />
         </NativeTabs.Trigger>
         <NativeTabs.Trigger name="about">
-          <Label>
+          <NativeTabs.Trigger.Label>
             {abouttitle}
-          </Label>
-          <Icon sf={"info"} md="info" />
+          </NativeTabs.Trigger.Label>
+          <NativeTabs.Trigger.Icon sf={"info"} md="info" />
+        </NativeTabs.Trigger>
+        <NativeTabs.Trigger name="videoview">
+          <NativeTabs.Trigger.Label>
+            Video
+          </NativeTabs.Trigger.Label>
+          <NativeTabs.Trigger.Icon sf={"video"} md="video_file" />
         </NativeTabs.Trigger>
       </NativeTabs>
     </ThemeProvider>

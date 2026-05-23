@@ -1,6 +1,6 @@
 {
   "expo": {
-    "name": "chaosplus",
+    "name": "Chaos+",
     "slug": "chaosplus",
     "version": "1.0.0",
     "orientation": "portrait",
@@ -9,7 +9,10 @@
     "userInterfaceStyle": "automatic",
     "ios": {
       "supportsTablet": true,
-      "bundleIdentifier": "de.cmg.chaosplus"
+      "bundleIdentifier": "de.cmg.chaosplus",
+      "infoPlist": {
+        "ITSAppUsesNonExemptEncryption": false
+      }
     },
     "android": {
       "adaptiveIcon": {
@@ -49,10 +52,17 @@
       "expo-web-browser",
       "expo-localization",
       "expo-font",
-      "expo-image"
+      "expo-image",
+      "expo-status-bar"
     ],
     "experiments": {
       "typedRoutes": true
+    },
+    "extra": {
+      "router": {},
+      "eas": {
+        "projectId": "5073caaf-c7c1-43c6-9561-3e62f4443ddf"
+      }
     }
   }
 }

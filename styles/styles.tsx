@@ -1,11 +1,12 @@
+import { useTheme } from "expo-router";
 import { StyleSheet } from "react-native";
 
-export function mystyles(colorSheme: string | undefined) {
-    console.log(colorSheme)
+export function useStyles() {
+    const theme = useTheme();
     return StyleSheet.create({
-        heading: { fontSize: 20, margin: 5, color: colorSheme ? "black" : "white" },
+        heading: { fontSize: 20, margin: 5, color: theme.colors.text },
         infopage: {
-            alignContent: "center", // alignItems: "center",
+            alignContent: "center",
             alignSelf: "center",
             width: "100%",
             height: "100%",
