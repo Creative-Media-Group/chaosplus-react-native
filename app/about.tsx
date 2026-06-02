@@ -7,7 +7,7 @@ export default function MediaInfoPage() {
   const colorSheme = useColorScheme();
   const styles = useStyles();
   return (
-    <SafeAreaView>
+    <SafeAreaView style={{ flex: 1 }}>
       <ScrollView style={styles.infopage}>
         <Text style={styles.infopagetext}>Repository: </Text>
         <Link

@@ -15,7 +15,7 @@ export function useStyles() {
             color: "blue",
             fontSize: 20,
         },
-        infopagetext: {},
+        infopagetext: { color: theme.colors.text },
         homeview: {
             flex: 1,
             // justifyContent: "center",

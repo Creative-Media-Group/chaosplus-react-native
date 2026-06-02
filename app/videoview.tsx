@@ -4,7 +4,7 @@ import { Text } from "react-native";
 import { SafeAreaView } from "react-native-safe-area-context";
 import { useStyles } from "../styles/styles";
 
-const videoSource = "https://download.blender.org/demo/movies/ToS/tearsofsteel_4k.mov";
+const videoSource = "https://download.blender.org/demo/movies/ToS/tears_of_steel_1080p.webm";
 
 export default function MyVideoView() {
   const styles = useStyles();
