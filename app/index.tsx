@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { ScrollView, Text } from "react-native";
+import { useSafeAreaInsets } from "react-native-safe-area-context";
 import { useStyles } from '../styles/styles';
 
 interface ConferenceList {
@@ -8,6 +9,7 @@ interface ConferenceList {
 }
 export default function Index() {
     const style = useStyles();
+    const insets = useSafeAreaInsets();
     const [conferences, setConferences] = useState<ConferenceList[]>([]);
     async function getConferences() {
         try {
@@ -23,7 +25,7 @@ export default function Index() {
     useEffect(() => { getConferences() }, []);
 
     return (
-        <ScrollView style={style.infopage} contentContainerStyle={{ alignItems: "center" }}>
+        <ScrollView style={[style.infopage, { paddingTop: insets.top }]} contentContainerStyle={{ alignItems: "center" }}>
             {conferences.map((conference) => (
                 <Text style={style.heading} key={conference.title}>{conference.title}</Text>
                 //<Link href={"/videoview"} key={conference.acronym}>Hello</Link>
