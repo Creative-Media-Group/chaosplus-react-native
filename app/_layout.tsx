@@ -10,7 +10,8 @@ export default function RootLayout() {
   const colorSheme = useColorScheme();
   return (
     <ThemeProvider value={colorSheme === "dark" ? DarkTheme : DefaultTheme}>
-      <NativeTabs>
+      <NativeTabs
+      >
         <NativeTabs.Trigger name="index">
           <NativeTabs.Trigger.Label>{hometitle}
           </NativeTabs.Trigger.Label>
