@@ -11,6 +11,8 @@ export default function RootLayout() {
   return (
     <ThemeProvider value={colorSheme === "dark" ? DarkTheme : DefaultTheme}>
       <NativeTabs
+        blurEffect="systemDefault"
+        sidebarAdaptable={true}
       >
         <NativeTabs.Trigger name="index">
           <NativeTabs.Trigger.Label>{hometitle}
