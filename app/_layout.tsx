@@ -1,10 +1,9 @@
-import { DarkTheme, DefaultTheme, ThemeProvider, useTheme } from "expo-router/react-navigation";
+import { DarkTheme, DefaultTheme, ThemeProvider } from "expo-router/react-navigation";
 import { NativeTabs } from "expo-router/unstable-native-tabs";
 import { useColorScheme } from "react-native";
 import { i18n } from "../utils/mylocalisation";
 
 export default function RootLayout() {
-  const theme = useTheme();
   let hometitle = i18n.t("home");
   let abouttitle = i18n.t("about");
   const colorSheme = useColorScheme();
