@@ -4,7 +4,7 @@ import { Text } from "react-native";
 import { SafeAreaView } from "react-native-safe-area-context";
 import { useStyles } from "../styles/styles";
 
-const videoSource = "https://download.blender.org/demo/movies/ToS/tears_of_steel_1080p.webm";
+const videoSource = "https://download.blender.org/demo/movies/ToS/tears_of_steel_1080p.mov";
 
 export default function MyVideoView() {
   const styles = useStyles();
@@ -21,8 +21,8 @@ export default function MyVideoView() {
         style={styles.video}
         player={player}
         fullscreenOptions={{ enable: true, keepFullscreenOnPiPStop: "always" }}
-
         allowsPictureInPicture={true}
+      //nativeControls
       />
       <Text style={styles.heading}>Hello</Text>
     </SafeAreaView>
