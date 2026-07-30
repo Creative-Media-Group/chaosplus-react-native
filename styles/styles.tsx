@@ -4,7 +4,7 @@ import { StyleSheet } from "react-native";
 export function useStyles() {
     const theme = useTheme();
     return StyleSheet.create({
-        heading: { fontSize: 20, margin: 5, color: theme.colors.text },
+        heading: { fontSize: 20, margin: 5 },
         infopage: {
             alignContent: "center",
             alignSelf: "center",

@@ -1,3 +1,4 @@
+import { useTheme } from "expo-router";
 import { useEffect, useState } from "react";
 import { ScrollView, Text } from "react-native";
 import { useSafeAreaInsets } from "react-native-safe-area-context";
@@ -10,6 +11,7 @@ interface ConferenceList {
 export default function Index() {
     const style = useStyles();
     const insets = useSafeAreaInsets();
+    const theme = useTheme();
     const [conferences, setConferences] = useState<ConferenceList[]>([]);
     async function getConferences() {
         try {
@@ -27,7 +29,7 @@ export default function Index() {
     return (
         <ScrollView style={[style.infopage, { paddingTop: insets.top }]} contentContainerStyle={{ alignItems: "center" }}>
             {conferences.map((conference) => (
-                <Text style={style.heading} key={conference.title}>{conference.title}</Text>
+                <Text style={[style.heading, { color: theme.colors.text }]} key={conference.title}>{conference.title}</Text>
                 //<Link href={"/videoview"} key={conference.acronym}>Hello</Link>
             ))}
         </ScrollView>
