@@ -14,7 +14,7 @@ export default function Card({ img_src, text }: CardProbs) {
             backgroundColor: "red",
             borderRadius: 20
         }}>
-            <Image source={img_src} />
+            <Image source={img_src.toString()} />
             <Text>{text}</Text>
         </TouchableOpacity>
     )
