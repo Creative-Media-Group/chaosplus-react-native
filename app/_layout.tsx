@@ -1,5 +1,5 @@
+import { NativeTabs } from "expo-router/native-tabs";
 import { DarkTheme, DefaultTheme, ThemeProvider, useTheme } from "expo-router/react-navigation";
-import { NativeTabs } from "expo-router/unstable-native-tabs";
 import { useColorScheme } from "react-native";
 import { i18n } from "../utils/mylocalisation";
 
@@ -16,7 +16,8 @@ export default function RootLayout() {
         sidebarAdaptable={true}
       >
         <NativeTabs.Trigger name="index">
-          <NativeTabs.Trigger.Label>{hometitle}
+          <NativeTabs.Trigger.Label>
+            {hometitle}
           </NativeTabs.Trigger.Label>
           <NativeTabs.Trigger.Icon sf={"house"} md="home" />
         </NativeTabs.Trigger>

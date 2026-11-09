@@ -9,7 +9,7 @@ const videoSource = "https://download.blender.org/demo/movies/ToS/tears_of_steel
 export default function MyVideoView() {
   const styles = useStyles();
   const player = useVideoPlayer(videoSource, (player) => {
-    player.play();
+    // player.play();
   });
   const { isPlaying } = useEvent(player, "playingChange", {
     isPlaying: player.playing
