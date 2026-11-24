@@ -30,7 +30,7 @@ export default function Index() {
         <>
         <Stack.Title>Hello</Stack.Title>
         <Host style={{ flex: 1 }}>
-            <ScrollView style={{}}>
+            <ScrollView>
                 {conferences.map((conference) => (
                     <Text style={{}} key={conference.title}>{conference.title}</Text>
                     //<Link href={"/videoview"} key={conference.acronym}>Hello</Link>
