@@ -1,4 +1,5 @@
 import { useEvent } from "expo";
+import { Stack } from "expo-router";
 import { VideoView, useVideoPlayer } from "expo-video";
 import { Text } from "react-native";
 import { SafeAreaView } from "react-native-safe-area-context";
@@ -16,14 +17,15 @@ export default function MyVideoView() {
   });
   console.log("Status: " + isPlaying);
   return (
-    <SafeAreaView style={{ flex: 1 }}>
-      <VideoView
-        style={styles.video}
-        player={player}
-        fullscreenOptions={{ enable: true, keepFullscreenOnPiPStop: "always" }}
-        allowsPictureInPicture={true}
-      />
-      <Text style={styles.heading}>Hello</Text>
-    </SafeAreaView>
+    <>
+      <Stack.Title large>Hello</Stack.Title>
+      <SafeAreaView style={{ flex: 1 }}>
+        <VideoView
+          style={styles.video}
+          player={player}
+          fullscreenOptions={{ enable: true, keepFullscreenOnPiPStop: "always" }}
+          allowsPictureInPicture={true} />
+        <Text style={styles.heading}>Hello</Text>
+      </SafeAreaView></>
   );
 }
