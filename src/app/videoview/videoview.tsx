@@ -3,7 +3,7 @@ import { Stack } from "expo-router";
 import { VideoView, useVideoPlayer } from "expo-video";
 import { Text } from "react-native";
 import { SafeAreaView } from "react-native-safe-area-context";
-import { useStyles } from "../styles/styles";
+import { useStyles } from "../../styles/styles";
 
 const videoSource = "https://download.blender.org/demo/movies/ToS/tears_of_steel_720p.mov";
 

@@ -1,7 +1,7 @@
 import { ScrollView, Text } from "@expo/ui";
 import { Link, Stack } from "expo-router";
 import { useSafeAreaInsets } from "react-native-safe-area-context";
-import { useStyles } from "../styles/styles";
+import { useStyles } from "../../styles/styles";
 
 export default function MediaInfoPage() {
   const insets = useSafeAreaInsets();

@@ -2,7 +2,7 @@ import { Host, ScrollView, Text } from "@expo/ui";
 import { Stack, useTheme } from "expo-router";
 import { useEffect, useState } from "react";
 import { useSafeAreaInsets } from "react-native-safe-area-context";
-import { useStyles } from '../styles/styles';
+import { useStyles } from '../../styles/styles';
 
 interface ConferenceList {
     acronym: string
