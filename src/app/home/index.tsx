@@ -28,7 +28,7 @@ export default function Index() {
 
     return (
         <>
-            <Stack.Title large>Hello</Stack.Title>
+            <Stack.Title large>Chaos +</Stack.Title>
             <Host style={{ flex: 1 }}>
                 <ScrollView>
                     {conferences.map((conference) => (

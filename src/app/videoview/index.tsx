@@ -18,7 +18,7 @@ export default function MyVideoView() {
   console.log("Status: " + isPlaying);
   return (
     <>
-      <Stack.Title large>Hello</Stack.Title>
+      <Stack.Title>Hello</Stack.Title>
       <SafeAreaView style={{ flex: 1 }}>
         <VideoView
           style={styles.video}
