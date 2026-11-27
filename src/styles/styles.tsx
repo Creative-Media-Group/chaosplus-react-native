@@ -4,18 +4,19 @@ import { StyleSheet } from "react-native";
 export function useStyles() {
     const theme = useTheme();
     return StyleSheet.create({
-        heading: { fontSize: 20, margin: 5, color:theme.colors.text },
-        infopage: {
-            alignContent: "center",
-            alignSelf: "center",
-            width: "100%",
-            height: "100%",
+        heading: {
+            fontSize: 20,
+            margin: 5,
+            color: theme.colors.text
         },
         link: {
             color: "blue",
             fontSize: 20,
         },
-        infopagetext: { color: theme.colors.text },
+        infopagetext: {
+            color: theme.colors.text,
+            fontSize: 15
+        },
         homeview: {
             flex: 1,
             // justifyContent: "center",

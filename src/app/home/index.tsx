@@ -1,5 +1,6 @@
 import { Host, ScrollView, Text } from "@expo/ui";
 import { Stack, useTheme } from "expo-router";
+import { fetch } from "expo/fetch";
 import { useEffect, useState } from "react";
 import { useSafeAreaInsets } from "react-native-safe-area-context";
 import { useStyles } from '../../styles/styles';
@@ -9,7 +10,7 @@ interface ConferenceList {
     title: string
 }
 export default function Index() {
-    const style = useStyles();
+    const mystyle = useStyles();
     const insets = useSafeAreaInsets();
     const theme = useTheme();
     const [conferences, setConferences] = useState<ConferenceList[]>([]);
@@ -32,7 +33,7 @@ export default function Index() {
             <Host style={{ flex: 1 }}>
                 <ScrollView>
                     {conferences.map((conference) => (
-                        <Text style={{}} key={conference.title}>{conference.title}</Text>
+                        <Text textStyle={mystyle.heading} key={conference.title}>{conference.title}</Text>
                         //<Link href={"/videoview"} key={conference.acronym}>Hello</Link>
                     ))}
                 </ScrollView>

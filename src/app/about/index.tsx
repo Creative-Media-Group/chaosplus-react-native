@@ -1,4 +1,5 @@
-import { Host, ScrollView, Text } from "@expo/ui";
+import { FieldGroup, Host, Text } from "@expo/ui";
+import { Image } from "expo-image";
 import { Link, Stack } from "expo-router";
 import { useSafeAreaInsets } from "react-native-safe-area-context";
 import { useStyles } from "../../styles/styles";
@@ -10,20 +11,22 @@ export default function MediaInfoPage() {
     <>
       <Stack.Title large>Hello</Stack.Title>
       <Host style={{ flex: 1 }}>
-        <ScrollView style={{}}>
-          <Text style={{}}>Repository: </Text>
-          <Link
-            href={
-              "https://github.com/Creative-Media-Group/chaosplus-react-native"
-            }
-            style={styles.link}
-          >
-            Chaos+
-          </Link>
-        </ScrollView>
+        <FieldGroup>
+          <FieldGroup.Section>
+            <Text>Repository:</Text>
+            <Link
+              href={
+                "https://github.com/Creative-Media-Group/chaosplus-react-native"
+              }
+              style={styles.link}
+            >
+              Chaos+
+            </Link>
+          </FieldGroup.Section>
+        </FieldGroup>
       </Host>
+    <Image />
     </>
-    //<Image></Image>
   )
 
 }
